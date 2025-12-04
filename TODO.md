@@ -1,0 +1,5 @@
+- [x] Modify CartList component to accept updateCartQuantity and deleteCartItem as props
+- [x] Import CartList in CartScreen
+- [x] Replace inline rendering in CartScreen with CartList component
+- [x] Add Ionicons import to CartList
+- [x] Update CartList styling to match CartScreen

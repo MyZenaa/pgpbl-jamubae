@@ -1,33 +1,60 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Tabs } from "expo-router";
+import React from "react";
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { HapticTab } from "@/components/haptic-tab";
+import { FontAwesome5 } from '@expo/vector-icons';
+import { useColorScheme } from "@/hooks/use-color-scheme";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        // Menentukan warna background tab menjadi hijau
+        tabBarStyle: {
+          backgroundColor: "#0F3D2E", // Hijau untuk background
+        },
+        // Menentukan warna ikon aktif menjadi warna lebih terang (misalnya #F4EED8)
+        tabBarActiveTintColor: "#F4EED8", // Warna ikon aktif
+        // Menentukan warna ikon non-aktif
+        tabBarInactiveTintColor: "#D9D9D9", // Misalnya warna abu-abu muda untuk ikon tidak aktif
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarButton: HapticTab, // Menggunakan custom tab button dengan haptic feedback
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="homescreen"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 size={28} name="home" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="mapscreen"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "Maps",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 size={28} name="map-marked-alt" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="productscreen"
+        options={{
+          title: "Product",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 size={28} name="shopping-bag" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="cartscreen"
+        options={{
+          title: "Cart",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 size={28} name="shopping-cart" color={color} />
+          ),
         }}
       />
     </Tabs>

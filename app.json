@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "pgpbl",
+    "name": "SUWE ORA JAMU, JAMU ORA SUWE",
     "slug": "pgpbl",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "pgpbl",
+    "icon": "./assets/images/logo.png",
+    "scheme": "SUWE ORA JAMU, JAMU ORA SUWE",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
