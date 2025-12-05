@@ -93,8 +93,8 @@ Proyek ini dikembangkan menggunakan **React Native** dan **Firebase**. Pastikan 
     cd ..
     npx react-native run-ios
     ```
-<img width="723" height="1600" alt="image" src="https://github.com/user-attachments/assets/260ce0ea-3759-46ff-a1cb-a0d986be416c" />
-<img width="723" height="1600" alt="image" src="https://github.com/user-attachments/assets/492398d7-ef41-4c9f-accc-2b65304a3782" />
-<img width="723" height="1600" alt="image" src="https://github.com/user-attachments/assets/b0fafe7e-3029-40f7-ba9a-3610abba105b" />
-<img width="723" height="1600" alt="image" src="https://github.com/user-attachments/assets/251b462e-58f7-4e34-beef-3cb747255c4a" />
+<img width="200" height="1600" alt="image" src="https://github.com/user-attachments/assets/260ce0ea-3759-46ff-a1cb-a0d986be416c" />
+<img width="200" height="1600" alt="image" src="https://github.com/user-attachments/assets/492398d7-ef41-4c9f-accc-2b65304a3782" />
+<img width="200" height="1600" alt="image" src="https://github.com/user-attachments/assets/b0fafe7e-3029-40f7-ba9a-3610abba105b" />
+<img width="200" height="1600" alt="image" src="https://github.com/user-attachments/assets/251b462e-58f7-4e34-beef-3cb747255c4a" />
 
